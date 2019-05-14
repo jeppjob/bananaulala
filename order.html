@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order ng Meryenda | Banana Ulala</title>
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+
+        <header>
+                <nav class="menu">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/bananaulala-logo.png" alt="banana ulala logo"></a>
+                    </div>
+                    <ul>
+                        <li><a href="/turon.html">Turon</a></li>
+                        <li><a href="/maruya.html">Maruya</a></li>
+                        <li><a href="/bananacue.html">Bananacue</a></li>
+                        <li><a href="/minatamis.html">Minatamis</a></li>
+                    </ul>
+                    <div class="order-button">
+                        <a href="/order.html">Order</a>
+                    </div>
+                </nav>
+            </header>
+    <div class="wrapper">
+
+        <section class="body-wrapper order">
+            <div class="pricing">
+                <h1 data-splitting>PRICE</h1>
+                <div class="price-table">
+                    <ul>
+                        <li>
+                            Turon
+                        </li>
+                        <li>
+                            Maruya
+                        </li>
+                        <li>
+                            Bananacue
+                        </li>
+                        <li>
+                            Minatamis
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            P 25/pc
+                        </li>
+                        <li>
+                            P 20/pc
+                        </li>
+                        <li>
+                            P 25/pc
+                        </li>
+                        <li>
+                            P 35/pc
+                        </li>
+                    </ul>
+                </div>
+                <p style="color: #fcb134">Please keep your line open for confirmation of order
+                    Delivery is only available around Paliparan 3, Dasmarinas City, Cavite.
+                    Orders outside will not be entertained.</p>
+            </div>
+            <div class="order-form">
+                <form action="">
+                    <label for="name">
+                        Name:
+                        <input type="text" name="name" required>
+                    </label>
+                    <label for="mobile-number">
+                        Mobile Number
+                        <input type="tel" name="mobile-number" required>
+                    </label>
+                    <label for="address">
+                        Address
+                        <input type="text" name="address">
+                    </label>
+                    <fieldset>
+                        <label class="order-quantity">
+                            <div class="order-quantity-checkbox"><input id="turoncb" type="checkbox" name="meryenda" value="Turon">Turon<span class="custom-checkbox"></span></div>
+                            <div>Quantity <input id="turont"type="number" name="meryenda" value="1" disabled></div>
+                        </label>
+                        <label class="order-quantity">
+                            <div class="order-quantity-checkbox"><input id="maruyacb" type="checkbox" name="meryenda" value="Maruya">Maruya<span class="custom-checkbox"></span></div>
+                            <div>Quantity <input id="maruyat" type="number" name="meryenda" value="1" disabled></div>
+                        </label>
+                        <label class="order-quantity">
+                            <div class="order-quantity-checkbox"><input id="bananacuecb" type="checkbox" name="meryenda" value="Banancue">Bananacue<span class="custom-checkbox"></span></div>
+                            <div>Quantity <input id="bananat" type="number" name="meryenda" value="1" disabled></div>
+                        </label>
+                        <label class="order-quantity">
+                            <div class="order-quantity-checkbox"><input id="minatamiscb" type="checkbox" name="meryenda" value="Minatamis">Minatamis<span class="custom-checkbox"></span></div>
+                            <div>Quantity <input id="minatamist" type="number" name="meryenda" value="1" disabled></div>
+                        </label>
+                    </fieldset>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+        <div class="circle-background-1"><img src="/img/background-1.png" alt="bg1"></div>
+        <div class="circle-background-2"><img src="/img/background-2.png" alt="bg2"></div>
+    </div>
+</body>
+<script> Splitting(); </script>
+<script src="/order-qty.js"></script>
+</html>
